@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight&family=Lato&display=swap');
+
+:root {
+    --main-bg-color: #2874f0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(221, 233, 241);
+}
+
+.progress {
+    background-color: white;
+    height: 3px;
+    animation: load 1s ease-in-out 1;
+}
+
+header {
+    background-color: var(--main-bg-color);
+    font-family: 'Lato', sans-serif;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 90px;
+    padding: 0 25px;
+}
+
+nav ul {
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.cart {
+    display: flex;
+    margin: auto 20px auto 115px;
+
+}
+
+.C {
+    color: white;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    padding: 3px;
+}
+
+.C:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.w {
+    color: white;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    padding: 3px;
+}
+
+.w:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.wishlist {
+    display: flex;
+    margin: auto 5px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    height: 40px;
+    width: 400px;
+    padding: 0 10px;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    min-height: calc(100vh - 60px - 10vh);
+}
+
+.offers {
+    display: flex;
+    flex-direction: row;
+}
+
+.offers p {
+    display: flex;
+    justify-content: center;
+}
+
+.offers p a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.offers p a:hover {
+    color: var(--main-bg-color);
+    font-weight: bolder;
+}
+
+.slider {
+    /* width: 95vw; */
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.slider img {
+    display: block;
+    margin: auto;
+}
+
+.slider a {
+    display: block;
+    margin: auto;
+    background-color: white;
+}
+
+.img1 {
+    width: 3vw;
+    transform: translateX(0vw);
+}
+
+.img2 {
+    width: 87vw;
+    transform: translateX(0vw);
+}
+
+.img3 {
+    width: 3vw;
+    transform: translateX(0vw);
+}
+
+.shoes {
+    max-width: 95vw;
+    background-color: white;
+    margin: auto;
+    overflow: hidden;
+}
+
+.f1 {
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+h2 a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 a:hover {
+    color: var(--main-bg-color);
+    font-weight: bolder;
+}
+
+.sitems {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    /* text-align: center; */
+}
+
+.mobiles {
+    max-width: 95vw;
+    background-color: white;
+    margin: auto;
+    overflow: hidden;
+}
+
+.mitems {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+footer {
+    height: 9vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 75vw;
+    }
+
+    100% {
+        width: 100vw;
+    }
+}
